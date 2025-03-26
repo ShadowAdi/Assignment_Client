@@ -19,7 +19,8 @@ function App() {
     const fetchCoupons = async () => {
       try {
         const response = await axios.get(
-          "https://serverinternshalaassignment.vercel.app/api/coupon/findAllCoupons"
+          "https://serverinternshalaassignment.vercel.app/api/coupon/findAllCoupons",
+          { withCredentials: true }
         );
         if (response.data.success) {
           setCoupons(response.data.coupons);
