@@ -56,6 +56,7 @@ function App() {
           <button
             onClick={() => {
               localStorage.removeItem("token");
+              setIsToken(false);
             }}
             className="bg-blue-700 py-4 px-5 text-white "
           >
