@@ -19,7 +19,7 @@ function App() {
     const fetchCoupons = async () => {
       try {
         const response = await axios.get(
-          "https://assignment-dqi6.onrender.com//api/coupon/findAllCoupons",
+          "https://assignment-dqi6.onrender.com/api/coupon/findAllCoupons",
           { withCredentials: true }
         );
         if (response.data.success) {

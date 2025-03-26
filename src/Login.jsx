@@ -15,7 +15,7 @@ const Login = () => {
     try {
       console.log("Form Data ", formData);
       const res = await axios.post(
-        "https://assignment-dqi6.onrender.com//api/user/login",
+        "https://assignment-dqi6.onrender.com/api/user/login",
         formData
       );
       localStorage.setItem("token", res.data.token);

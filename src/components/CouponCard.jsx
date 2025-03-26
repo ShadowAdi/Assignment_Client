@@ -7,7 +7,7 @@ const CouponCard = ({ coupon, onClaim }) => {
     const handleClaim = async () => {
       try {
         const response = await axios.put(
-          "https://assignment-dqi6.onrender.com//api/coupon/claim"
+          "https://assignment-dqi6.onrender.com/api/coupon/claim"
         );
   
         if (response.data.success) {

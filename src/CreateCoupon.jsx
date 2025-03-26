@@ -18,7 +18,7 @@ const CreateCoupon = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://assignment-dqi6.onrender.com//api/coupon/create",
+        "https://assignment-dqi6.onrender.com/api/coupon/create",
         { code: couponCode },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
