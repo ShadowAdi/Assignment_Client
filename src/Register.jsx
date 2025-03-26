@@ -12,7 +12,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response=await axios.post("https://serverinternshalaassignment.vercel.app/api/user/register", formData);
+      const response=await axios.post("https://assignment-dqi6.onrender.com//api/user/register", formData);
       console.log("Response ",response)
       alert("Registration successful!");
       navigate("/login");

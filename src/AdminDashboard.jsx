@@ -17,7 +17,7 @@ const AdminDashboard = () => {
     const fetchCoupons = async () => {
       try {
         const response = await axios.get(
-          "https://serverinternshalaassignment.vercel.app/api/coupon/findCoupons",
+          "https://assignment-dqi6.onrender.com//api/coupon/findCoupons",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -36,7 +36,7 @@ const AdminDashboard = () => {
   const handleDelete = async (couponId) => {
     try {
       const response = await axios.delete(
-        `https://serverinternshalaassignment.vercel.app/api/coupon/deleteCoupon/${couponId}`,
+        `https://assignment-dqi6.onrender.com//api/coupon/deleteCoupon/${couponId}`,
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
