@@ -15,7 +15,7 @@ const Login = () => {
     try {
       console.log("Form Data ", formData);
       const res = await axios.post(
-        "http://localhost:3000/api/user/login",
+        "https://serverinternshalaassignment.vercel.app/api/user/login",
         formData
       );
       localStorage.setItem("token", res.data.token);

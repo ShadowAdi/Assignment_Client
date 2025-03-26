@@ -7,7 +7,7 @@ const CouponCard = ({ coupon, onClaim }) => {
     const handleClaim = async () => {
       try {
         const response = await axios.put(
-          "http://localhost:3000/api/coupon/claim"
+          "https://serverinternshalaassignment.vercel.app/api/coupon/claim"
         );
   
         if (response.data.success) {

@@ -18,7 +18,7 @@ const CreateCoupon = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/coupon/create",
+        "https://serverinternshalaassignment.vercel.app/api/coupon/create",
         { code: couponCode },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
